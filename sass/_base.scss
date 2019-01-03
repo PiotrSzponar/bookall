@@ -17,8 +17,7 @@ Grey dark 3: #999
 */
 
 :root {
-    --color-primary: #FF1960;
-    --color-primary-bright: #ff6193;
+    --color-primary: #0290ff;
     --color-primary-light: #00c6ff;
     --color-primary-dark: #0072ff;
 
@@ -32,6 +31,9 @@ Grey dark 3: #999
     --color-grey-dark-3: #999;
 
     --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
+    --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
+
+    --line: 1px solid var(--color-grey-light-2);
 }
 
 * {
