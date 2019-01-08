@@ -25,21 +25,39 @@
                 </button>
             </form>
             <nav class="user-nav">
-                <div class="user-nav__icon-box">
+                <div class="user-nav__box">
                     <svg class="user-nav__icon">
                         <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                     </svg>
                     <span class="user-nav__notification">7</span>
+                    <ul class="user-nav__sub-nav user-nav__sub-nav--bookmark">
+                        <li><a href="#">Hotel La Vagabonde<span class="location">Saint-Tropez, France</span></a></li>
+                        <li><a href="#">Hotel Animi Nisi<span class="location">Lyon, France</span></a></li>
+                        <li><a href="#">Hotel Voluptate <span class="location">Paris, France</span></a></li>
+                        <button class="btn-inline">Show all <span>&rarr;</span></button>
+                    </ul>
                 </div>
-                <div class="user-nav__icon-box">
+                <div class="user-nav__box">
                     <svg class="user-nav__icon">
                         <use xlink:href="img/sprite.svg#icon-chat"></use>
                     </svg>
                     <span class="user-nav__notification">12</span>
+                    <ul class="user-nav__sub-nav user-nav__sub-nav--message">
+                        <li><a href="#">Hotel La Vagabonde<span class="message message--unread">4</span></a></li>
+                        <li><a href="#">Hotel Animi Nisi<span class="message message--unread">8</span></a></li>
+                        <li><a href="#">Hotel Voluptate<span class="message">5</span></a></li>
+                        <button class="btn-inline">Show all <span>&rarr;</span></button>
+                    </ul>
                 </div>
-                <div class="user-nar__user">
+                <div class="user-nav__box">
                     <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
                     <span class="user-nav__user-name">Piotr</span>
+                    <ul class="user-nav__sub-nav user-nav__sub-nav--user">
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">My orders</a></li>
+                        <li><a href="#">User settings</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -201,6 +219,14 @@
             </main>
         </div>
     </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <a class="popup__close">&times;</a>
+            <img src="" alt="" class="popup__photo">
+        </div>
+    </div>
+<script src="js/script.js"></script>
 </body>
 
 </html>
